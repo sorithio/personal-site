@@ -2,4 +2,5 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Project'
 theme = "PaperMod"
-
+[params]
+author = "kb"
