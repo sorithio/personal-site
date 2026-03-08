@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://incrementally.work/'
 languageCode = 'en-us'
 title = 'incrementally.work'
 theme = "PaperMod"
