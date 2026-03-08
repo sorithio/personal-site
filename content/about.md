@@ -68,4 +68,4 @@ I generally gravitate toward this concept. Still working out why and to what deg
 
 ---
 
-*Last updated: March 2026*
+*Version 1.4 — Last updated: March 2026. This is a living document.*

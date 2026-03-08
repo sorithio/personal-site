@@ -6,6 +6,6 @@ theme = "PaperMod"
 author = "kb"
 
 [[menus.main]]
-name = 'About'
+name = 'Life Philosophy'
 url = '/about/'
 weight = 10
