@@ -1,5 +1,5 @@
 +++
-date = '2026-02-24T20:09:22-06:00'
+date = 'date = '2026-03-08T00:00:00'
 draft = false
 title = 'Infinite Curiosity vs Finite Time'
 +++
