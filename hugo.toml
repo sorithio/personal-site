@@ -23,3 +23,8 @@ page = ["HTML"]
 section = ["HTML"]
 taxonomy = ["HTML"]
 term = ["HTML"]
+
+[[menus.main]]
+name = 'Writing'
+url = '/posts/'
+weight = 5
