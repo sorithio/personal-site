@@ -1,0 +1,33 @@
+﻿{{ define "main" }}
+<div style="display:flex; gap:2rem; align-items:flex-start;">
+
+  <div style="flex:2;">
+    <p style="border-bottom:1px solid #000; padding-bottom:4px;"><strong>Writing</strong></p>
+    {{ range where .Site.RegularPages "Section" "posts" }}
+    <div style="margin-bottom:0.5rem;">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <span style="color:#666; font-size:0.85em; margin-left:0.5rem;">{{ .Date.Format "Jan 2, 2006" }}</span>
+    </div>
+    {{ end }}
+  </div>
+
+  <div style="flex:1; font-size:0.9em;">
+
+    <p style="border-bottom:1px solid #000; padding-bottom:4px;"><strong>Now</strong></p>
+    <p>March 2026. Focused on: Natural State Run Club, getting the e-ink display working, and this site.</p>
+
+    <p style="border-bottom:1px solid #000; padding-bottom:4px; margin-top:1.5rem;"><strong>Currently Reading</strong></p>
+    <p><em>Fiction:</em> The Brotherband Chronicles</p>
+    <p><em>Nonfiction:</em> Good Strategy, Bad Strategy &amp; Algorithms to Live By</p>
+    <p style="font-size:0.85em; margin-top:0.5rem;"><a href="https://app.thestorygraph.com/profile/kbelcher1992" target="_blank">Storygraph profile</a></p>
+    <p style="font-size:0.85em;">2026 goal: 24 books</p>
+
+    <p style="border-bottom:1px solid #000; padding-bottom:4px; margin-top:1.5rem;"><strong>Running</strong></p>
+    <p>2026 goal: 1,500 mi</p>
+    <p>YTD: ~360 mi</p>
+    <p>This week: -- mi</p>
+    <p style="font-size:0.85em;"><em>Live data coming soon</em></p>
+
+  </div>
+</div>
+{{ end }}

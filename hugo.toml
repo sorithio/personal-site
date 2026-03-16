@@ -9,3 +9,11 @@ author = "kb"
 name = 'Life Philosophy'
 url = '/about/'
 weight = 10
+
+[[menus.main]]
+name = 'Books'
+url = '/books/'
+weight = 20
+
+[markup.goldmark.renderer]
+unsafe = true
