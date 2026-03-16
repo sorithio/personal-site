@@ -2,6 +2,7 @@
 title = 'Books'
 draft = false
 +++
+Some of my favorite reads from the last decade, in no particular order.
 
 <style>
 .book-grid { display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 2rem; }
