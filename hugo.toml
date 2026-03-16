@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'incrementally.work'
 theme = "PaperMod"
 [params]
-author = "kb"
+
 
 [[menus.main]]
 name = 'Life Philosophy'
@@ -17,3 +17,9 @@ weight = 20
 
 [markup.goldmark.renderer]
 unsafe = true
+[outputs]
+home = ["HTML", "JSON"]
+page = ["HTML"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML"]
