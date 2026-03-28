@@ -11,7 +11,7 @@
     {{ end }}
   </div>
 
-  <div style="flex:1; font-size:0.9em;">
+  <div style="flex:1.3; font-size:0.9em;">
 
     <p style="border-bottom:1px solid #000; padding-bottom:4px;"><strong>Now</strong></p>
     <p>March 2026. Focused on: IFR Written Test, Espresso Run Organization, E-ink Project</p>
@@ -23,9 +23,22 @@
 
     <p style="border-bottom:1px solid #000; padding-bottom:4px; margin-top:1.5rem;"><strong>Running</strong></p>
     <p>2026 goal: 1,500 mi</p>
-    <p>YTD: ~414 mi</p>
-    <p>This week: -- mi</p>
-    <p style="font-size:0.85em;"><em>Live data coming soon</em></p>
+<p>YTD: <span id="ytd">...</span> mi</p>
+<p>This week: <span id="weekly">...</span> mi</p>
+<p>Last run: <span id="lastDate">...</span> — <span id="lastMiles">...</span> mi</p>
+<script>
+fetch("https://strava-stats.kobelcher1992.workers.dev")
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById("ytd").textContent = d.ytd;
+    document.getElementById("weekly").textContent = d.weekly;
+    document.getElementById("lastDate").textContent = d.lastDate;
+const d2 = new Date(d.lastDate + "T00:00:00");
+document.getElementById("lastDate").textContent = d2.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    document.getElementById("lastMiles").textContent = d.lastMiles;
+  });
+</script>
+
 
   </div>
 </div>
