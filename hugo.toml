@@ -29,3 +29,8 @@ term = ["HTML"]
 name = 'Writing'
 url = '/posts/'
 weight = 5
+
+[[menus.main]]
+name = 'Now'
+url = '/now/'
+weight = 8
