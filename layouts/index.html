@@ -27,7 +27,7 @@
 <p>This week: <span id="weekly">...</span> mi</p>
 <p>Last run: <span id="lastDate">...</span> — <span id="lastMiles">...</span> mi</p>
 <script>
-fetch("https://strava-stats.kobelcher1992.workers.dev")
+fetch("https://intervals-stats.kobelcher1992.workers.dev")
   .then(r => r.json())
   .then(d => {
     document.getElementById("ytd").textContent = d.ytd;
